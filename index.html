@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header>
+
+</header>
+<main>
+
+
+<div style="display:flex;justify-content:flex-end;align-items:center;">
+    <div>
+        <i class="material-icons crawlsettings">settings</i>
+    </div>
+</div>
+
+<div id="holder" style="display:flex;justify-content:center;align-items:center;">
+    <div>
+        <i class="material-icons">input</i>
+    </div>
+    <div id="done">
+        <i class="material-icons">done</i>
+    </div>
+    <div id="notvalid">
+        <i class="material-icons">not_interested</i>
+    </div>
+</div>
+
+<div style="display:flex;justify-content:center;align-items:center;">
+<div class="row">
+    <div class="col s12">
+
+        <div class="input-field inline">
+            <input id="searchString" type="text">
+            <label for="searchString" data-error="wrong" data-success="right">String</label>
+        </div>
+    </div>
+</div>
+</div>
+<div style="display:flex;justify-content:center;align-items:center;">
+        <p class="range-field">
+            <input type="range" id="crawlSpeed" min="1" max="1" />
+        </p>
+</div>
+
+
+
+<div style="display:flex;justify-content:center;align-items:center;">
+    <div>
+        <a id="crawl" class="waves-effect waves-light btn"><i class="material-icons left">open_in_browser</i>Crawl</a>
+    </div>
+    <div>
+        <a id="cancel" class="waves-effect waves-light btn"><i class="material-icons left">stop</i>Cancel</a>
+    </div>
+</div>
+</main>
+<footer>
+<div class="footer-copyright">
+    <div  id="status" class="container">
+        <span id="currentURL"></span>
+        <span id="totalURLs"></span>
+
+            <span class="cs-loader-inner">
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+            </span>
+
+    </div>
+</div>
+</footer>
+<!-- If the require doesn't work, include first the jQuery file
+<script src="jquery-3.0.0.min.js"></script>-->
+<script>window.$ = window.jQuery = require('./assets/js/jquery2.1.1.min.js');</script>
+<script src="./assets/js/hammer.js"></script>
+<script src="./assets/js/materialize.min.js"></script>
+<!---<script>window.materialize = require('./assets/js/materialize.min.js');</script>-->
+<script src="assets/js/frontend.js"></script>
+
+</body>
+</html>

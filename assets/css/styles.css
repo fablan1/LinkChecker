@@ -1,0 +1,216 @@
+footer {
+    color:#E4F1FE;
+}
+
+#status {
+    margin-left: 5px;
+}
+
+body {
+    background-color:#446CB3;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 240px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color:#E4F1FE;
+}
+
+i {
+    text-align:right;
+}
+
+.crawlsettings {
+    font-size: 40px;
+}
+
+.btn {
+    background-color: #446CB3;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #4183D7;
+    color:#E4F1FE;
+}
+
+.material-icons:hover {
+    color:#E4F1FE;
+}
+
+
+#done {
+    display:none;
+}
+
+#notvalid {
+    display:none;
+}
+
+input[type=text] {
+    border-bottom: 1px solid #E4F1FE;
+}
+
+.input-field label {
+    color:#E4F1FE;
+}
+input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #E4F1FE;
+    box-shadow: 0 1px 0 0 #E4F1FE;
+}
+
+input[type=password]:focus:not([readonly])+label {
+    color:#E4F1FE;
+}
+
+input[type=text]:focus:not([readonly])+label {
+    color:#E4F1FE;
+}
+
+input[type=range]+.thumb .value {
+    color: #E4F1FE;
+}
+
+input[type=range]+.thumb {
+    background-color: #E4F1FE;
+}
+ .thumb {
+     background-color:#E4F1FE;
+ }
+input[type=range]::-webkit-slider-thumb {
+    background-color: #E4F1FE;
+}
+input[type=range]::-moz-range-thumb {
+    background-color: #E4F1FE;
+}
+input[type=range]::-ms-thumb {
+    background-color: #E4F1FE;
+}
+
+/***** These are to edit the thumb and the text inside the thumb *****/
+input[type=range] + .thumb {
+    background-color: #dedede;
+}
+input[type=range] + .thumb.active .value {
+    color: #446CB3;
+}
+
+.input-field {
+    color:#E4F1FE;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cs-loader-inner {
+    display:none;
+    margin-left: 180px;
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    width: calc(100% - 200px);
+    color: #E4F1FE;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.cs-loader-inner label {
+    font-size: 20px;
+    color:#E4F1FE;
+    opacity: 0;
+    display:inline-block;
+}
+
+@keyframes lol {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    66% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+@-webkit-keyframes lol {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-300px);
+    }
+    33% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+    66% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(300px);
+    }
+}
+
+.cs-loader-inner label:nth-child(6) {
+    -webkit-animation: lol 3s infinite ease-in-out;
+    animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(5) {
+    -webkit-animation: lol 3s 100ms infinite ease-in-out;
+    animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(4) {
+    -webkit-animation: lol 3s 200ms infinite ease-in-out;
+    animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+    -webkit-animation: lol 3s 300ms infinite ease-in-out;
+    animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+    -webkit-animation: lol 3s 400ms infinite ease-in-out;
+    animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+    -webkit-animation: lol 3s 500ms infinite ease-in-out;
+    animation: lol 3s 500ms infinite ease-in-out;
+}
